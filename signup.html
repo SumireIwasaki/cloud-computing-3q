@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新規登録</title>
+  </head>
+  <body>
+    <form id="form-sign-up" class="auth-card">
+      <h1>新規登録</h1>
+      <label>
+        <span>メールアドレス</span>
+        <input type="email" name="email" required />
+      </label>
+      <label>
+        <span>パスワード</span>
+        <input type="password" name="password" minlength="6" required />
+      </label>
+      <button type="submit">サインアップ</button>
+      <p class="link-area"><a href="index.html">サインインはこちら</a></p>
+    </form>
+    <script type="module" src="/src/signup.js"></script>
+  </body>
+</html>

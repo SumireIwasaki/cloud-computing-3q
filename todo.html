@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<title>TODO LIST</title>
+	</head>
+	<body>
+		<header class="todo-header">
+			<h1>TODO LIST</h1>
+			<div class="user-area">
+				<span id="sign-out-button">サインアウト</span>
+			</div>
+		</header>
+		<main class="todo-container">
+			<section class="todo-input-area">
+				<form id="todo-form">
+					<input type="text" id="todo-input" placeholder="新しいTODOを入力" requested/>
+					<button type="submit" id="add-button">追加</button>
+				</form>	
+			</section>
+			<nav class="todo-filter">
+				<button class="filter-button active" data-filter="all">すべて</button>
+				<button class="filter-button" data-filter="unfinished">未完了</button>
+				<button class="filter-button" data-filter="completed">完了</button>
+			</nav>
+			<section id="todo-list">
+				<!--TODOアイテムをここに表示-->
+			</section>
+		</main>
+		<script type="module" src="/src/todo.js"></script>
+	</body>
+</html>
