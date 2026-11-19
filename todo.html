@@ -4,10 +4,12 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 		<title>TODO LIST</title>
+		<link rel="stylesheet" href="./src/todo.css">
 	</head>
 	<body>
 		<header class="todo-header">
 			<h1>TODO LIST</h1>
+			<p id="user-email"></p>
 			<div class="user-area">
 				<span id="sign-out-button">サインアウト</span>
 			</div>
@@ -19,6 +21,13 @@
 					<button type="submit" id="add-button">追加</button>
 				</form>	
 			</section>
+			<div class="todo-counts">
+  				<p>全TODO：<span id="todo-count">0</span>件</p>
+  				<p>未完了：<span id="unfinished-count">0</span>件</p>
+			</div>
+			<button id="delete-completed-button">
+  				完了したTODOをまとめて削除
+			</button>
 			<nav class="todo-filter">
 				<button class="filter-button active" data-filter="all">すべて</button>
 				<button class="filter-button" data-filter="unfinished">未完了</button>
