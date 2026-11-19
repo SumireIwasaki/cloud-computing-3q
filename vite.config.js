@@ -8,8 +8,6 @@ export default defineConfig({
       input: {
         main: resolve(import.meta.dirname, 'index.html'),
         signup: resolve(import.meta.dirname, 'signup.html'),
-        user: resolve(import.meta.dirname, 'user.html'),
-        memo: resolve(import.meta.dirname, 'memo.html'),
         todo: resolve(import.meta.dirname, 'todo.html'),
       },
     },
